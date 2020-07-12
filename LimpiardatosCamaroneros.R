@@ -37,7 +37,7 @@ datos11_352fin<- mutate(datos11_352, Edo=case_when(datos11_352$`Puerto Base`=='C
 
 #dir.create('./capas', recursive = TRUE)
 #Exportar como shapefile
-#st_write(datos11_352fin_vecinter, "./capas/ReporteCamaroneros2010.shp")
+st_write(datos11_352fin_vecinter, "./capas/ReporteCamaroneros2010.shp")
 
 
 #datos11_35$`Fecha y Hora` <- as.Date(as.character(datos11_35$`Fecha y Hora`), format="%d-%m-%y  %H:%M"))
